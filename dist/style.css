@@ -1,0 +1,200 @@
+/* Universal Selector: Set the box-sizing to border-box, making the padding and border included in the width and height of a box.
+   Set all padding and margins to zero. */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header element: Set the border, color, background image and center the text horizontally. */
+header {
+    border: solid;
+    background-color: red;    
+    color: white; 
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    padding-top: 30px;
+}
+
+/* TeamRow class: Using the flexbox option to position the team member elements. */
+.TeamRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    flex-wrap: wrap;       
+    align-items: center; 
+    align-content: space-around;
+    width: 100%;
+    min-height: 800px;
+}
+
+/* TeamMember class: This class is for the team member element. */
+.TeamMember{
+    display: inline-block; 
+    width: 20%; 
+    height: 275px; 
+    margin: 10px;
+    border: solid;
+    background-color: rgb(246, 247, 249);
+}
+
+/* MemberHead class: This class is for the team member Header element. */
+.MemberHead{
+    min-height:65px; 
+    background-color:rgb(0, 119, 247); 
+    color:white;    
+}
+
+/* MemberName class: This class is for the team member Name element. */
+.MemberName{
+    padding-left:10px; 
+    padding-top:5px
+}
+
+/* MemberIcon class: This class is for the team member Icon element. */
+.MemberIcon{
+    display: inline; 
+    color: white; 
+    padding-left: 10px;
+}
+
+/* MemberTitle class: This class is for the team member Title element. */
+.MemberTitle{
+    padding-left: 5px; 
+    padding-top:5px; 
+    display: inline;
+}
+
+/* MemberData1 class: This class is for the team member Data1 element. */
+.MemberData1{
+    background-color: rgb(255, 255, 255); 
+    margin-left:20px; 
+    margin-right:20px; 
+    min-height: 45px; 
+    margin-top: 30px; 
+    border:5px solid lightgray; 
+    padding-left: 10px; 
+    padding-top: 7px;
+}
+
+/* MemberData2 class: This class is for the team member Data2 element. */
+.MemberData2{
+    background-color: rgb(255, 255, 255); 
+    margin-left:20px; 
+    margin-right:20px; 
+    min-height: 45px; 
+    margin-top: 5px; 
+    border:5px solid lightgray; 
+    padding-left: 10px; 
+    padding-top: 7px;
+}
+
+/**********************************************************************************************************
+* MEDIA QUERY SECTION: Change font size of text, width percentage of Team elements and flexbox direction
+* to column. 
+**********************************************************************************************************/
+@media screen and (max-width: 1150px){ 
+
+    /* Changed the font size for the text of the Team elements. */
+    .MemberName {
+        font-size: 14px;  
+    }
+
+    .MemberTitle {
+        font-size: 14px;  
+    }
+    
+    .MemberData1 {
+        font-size: 14px;  
+    } 
+    
+    .MemberData2 {
+        font-size: 14px;  
+    }    
+}
+
+@media screen and (max-width: 1130px){ 
+
+    /* Changed the font size for the text of the Team elements. */
+    .MemberName {
+        font-size: 12px;  
+    }
+
+    .MemberTitle {
+        font-size: 12px;  
+    }
+    
+    .MemberData1 {
+        font-size: 12px;  
+    } 
+    
+    .MemberData2 {
+        font-size: 12px;  
+    }    
+}
+
+@media screen and (max-width: 900px){ 
+
+    /* Changed the font size for the text of the Team elements. */
+    .MemberName {
+        font-size: 10px;  
+    }
+
+    .MemberTitle {
+        font-size: 10px;  
+    }
+    
+    .MemberData1 {
+        font-size: 10px;  
+    } 
+    
+    .MemberData2 {
+        font-size: 10px;  
+    }    
+}
+
+@media screen and (max-width: 750px){ 
+
+    /* Changed the flexbox direction to column for the Team Member elements. */
+    .TeamRow {
+        flex-direction: column;
+    } 
+    
+    /* Increased the width percentage for the Team elements. */
+    .TeamMember {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 500px){ 
+
+    /* Increased the width percentage for the Team elements. */
+    .TeamMember {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 400px){ 
+
+    /* Increased the width percentage for the Team elements. */  
+    .TeamMember {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 300px){ 
+
+    /* Increased the width percentage for the Team elements. */    
+    .TeamMember {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 250px){ 
+
+    /* Increased the width percentage for the Team elements. */    
+    .TeamMember {
+        width: 70%;
+    }
+}
